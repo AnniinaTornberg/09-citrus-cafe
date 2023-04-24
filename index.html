@@ -7,9 +7,15 @@
     <title>Citrus Cafe</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="layout.css" />
+    <script
+      src="https://kit.fontawesome.com/430b11bede.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <img src="images/lrg_logo.png" alt="logo" />
+    <header id="logo">
+      <img src="images/lrg_logo.png" alt="logo" />
+    </header>
     <nav class="main-nav">
       <ul>
         <li>Home</li>
@@ -19,39 +25,81 @@
         <li>Contact</li>
       </ul>
     </nav>
-    <div id="container"></div>
-    <header id="logo"></header>
-    <div id="maincontent"></div>
-    <article id="vision">
-      <section>
+    <div id="maincontent">
+      <article id="vision">
         <p>
           A new neighborhood kitchen using organic and sustainable ingredients
           all locally sourced.
         </p>
-        <img src="images/vision-image.png" alt="vision" />
-        <figure></figure>
-      </section>
-    </article>
-    <article id="boxes"></article>
-    <section id="specials">
-      <img src="images/tasty.jpg" alt="food" />
-    </section>
-    <section id="events">
-      <img src="images/interior.jpg" alt="table" />
-    </section>
-    <section id="news">
-      <ul>
-        <li>9/1 Celebrity Guest Chef Night</li>
-        <li>9/3 New Menu Samplers!</li>
-        <li>9/4 Chef Citrus Style</li>
-        <li>9/23 Pork Pork and More Pork</li>
-        <li>10/1 Celebrity Guest Chef Night</li>
-        <li>10/3 New Meny Samplers</li>
-        <li>10/4 Iron Chef Citrus Style</li>
-      </ul>
-    </section>
+        <figure><img src="images/vision-image.png" alt="vision" /></figure>
+      </article>
+      <article id="boxes">
+        <section id="specials">
+          <h2 class="alaviiva">
+            Today's specials
+            <span class="oikealle">
+              <i class="fa-solid fa-chevron-right"></i>
+            </span>
+          </h1>
+          <figure><img src="images/tasty.jpg" alt="food" /></figure>
+        </section>
+        <section id="events">
+          <h2 class="alaviiva">
+            Events
+            <span class="oikealle">
+              <i class="fa-solid fa-chevron-right"></i>
+            </span>
+          </h2>
+          <figure><img src="images/interior.jpg" alt="table" /></figure>
+        </section>
+        <section id="news">
+          <h2 class="alaviiva">
+            News
+            <span class="oikealle">
+              <i class="fa-solid fa-chevron-right"></i>
+            </span>
+          </h2>
+          <ul class="dates">
+            <li>
+              <span style="font-weight: bold">9/1</span> Celebrity Guest Chef
+              Night
+            </li>
+            <li>
+              <span style="font-weight: bold">9/3</span> New Menu Samplers!
+            </li>
+            <li>
+              <span style="font-weight: bold">9/4</span> Chef Citrus Style
+            </li>
+            <li>
+              <span style="font-weight: bold">9/24</span> Pork Pork and More
+              Pork
+            </li>
+            <li>
+              <span style="font-weight: bold">10/1</span> Celebrity Guest Chef
+              Night
+            </li>
+            <li>
+              <span style="font-weight: bold">10/3</span> New Meny Samplers
+            </li>
+            <li>
+              <span style="font-weight: bold">10/4</span> Iron Chef Citrus Style
+            </li>
+          </ul>
+        </section>
+      </article>
+    </div>
     <footer>
-      Citrus Cafe 601 Townsend St.San Fransico, CA, 94117 415-555-5555
+      <ul>
+        <li class="oikealle valkoinen">
+          <i class="fa-brands fa-twitter"></i>
+        </li>
+        <li class="oikealle valkoinen">
+          <i class="fa-brands fa-square-facebook"></i>
+        </li>
+      </ul>
+      <p class="valkoinen">Citrus Cafe</p>
+      <p class="valkoinen">601 Townsend St.San Fransico, CA, 94117</p>
+      <p class="lihavoitu">415-555-5555</p>
     </footer>
   </body>
 </html>

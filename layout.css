@@ -4,15 +4,134 @@ html {
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #83c05b;
+  margin-left: auto;
+  margin-right: auto;
+}
+p {
+  text-align: center;
 }
 .main nav {
 }
 .main-nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .main-nav ul > * {
+  flex-basis: 100%;
+  flex-grow: 1;
+  text-align: center;
+  font-size: 2.4rem;
+  padding: 1rem;
+  color: white;
+  border: solid black 1px;
+  border-radius: 10px;
+}
+figure img {
+  max-width: 100%;
+}
+.dates {
+  text-align: left;
+  background-color: white;
+}
+.address {
+  color: white;
 }
 
-.tablet {
+.facebook {
+  width: 20px;
+  height: 20px;
+  float: right;
 }
-.desktop {
+.twitter {
+  width: 20px;
+  height: 20px;
+  float: right;
+}
+.oikealle {
+  float: right;
+}
+section {
+  background-color: white;
+  border: solid white 1rem;
+  margin: 1rem;
+  text-align: left;
+}
+#vision {
+  margin: 1rem;
+}
+#vision p {
+  background-color: #83c05b;
+  padding: 2rem;
+  font-size: 1.6rem;
+  text-align: left;
+}
+#vision figure {
+  display: none;
+}
+.alaviiva {
+  border-bottom: 1rem white solid;
+}
+.boxes {
+}
+footer {
+  padding: 1rem;
+}
+.events {
+}
+.news {
+}
+h1,
+h2,
+h3 {
+  font-size: 20px;
+  background-color: #cbcbcb;
+
+  padding: 1rem;
+}
+footer p {
+  text-align: left;
+}
+.valkoinen {
+  color: white;
+}
+.lihavoitu {
+}
+
+@media only screen and (min-width: 426px) {
+  #vision {
+    border: white solid 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  #vision > * {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+  #vision p {
+    flex-grow: 2;
+    background-color: beige;
+  }
+  #vision figure {
+    display: block;
+  }
+  #boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #boxes > * {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+  #news {
+    flex-basis: 100%;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  #news {
+    flex-basis: 0;
+  }
 }
